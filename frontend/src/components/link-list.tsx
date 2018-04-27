@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Option } from 'catling'
 import { Link, CreateVote } from '../api/types'
-import { LinkItem, List, ListItem } from './'
+import { ProposalItem, List, ListItem } from './'
 
 interface Props {
   links: Link[]
@@ -14,7 +14,7 @@ export function LinkList({ links, onVote, userId }: Props) {
     <List>
       {links.map((link, i) => (
         <ListItem key={link.id}>
-          <LinkItem key={i} link={link} onVote={onVote} userId={userId} />
+          <ProposalItem key={i} proposal={link} onVote={onVote} userId={userId} />
         </ListItem>
       ))}
     </List>
