@@ -23,7 +23,7 @@ import {
   FormInput,
   Label,
   SectionHeading,
-  LinkItem,
+  ProposalItem,
 } from '../../components'
 
 interface FormProps {
@@ -95,8 +95,8 @@ export class ShowLink extends React.Component<Props> {
     return (
       <div>
         <PaddedCard>
-          <LinkItem
-            link={link}
+          <ProposalItem
+            proposal={link}
             onVote={this.props.onVote}
             userId={this.props.userId}
           />
