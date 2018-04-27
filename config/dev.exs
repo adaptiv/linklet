@@ -36,7 +36,7 @@ config :phoenix, :stacktrace_depth, 20
 config :linklet, Linklet.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: System.get_env("DB_USER") || "root",
-  password: System.get_env("DB_PASSWORD") || "password",
+  password: System.get_env("DB_PASSWORD") || "",
   database: System.get_env("DB_DATABASE") || "linklet_dev",
   hostname: System.get_env("DB_HOST") || "127.0.0.1",
   pool_size: 10

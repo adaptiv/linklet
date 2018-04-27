@@ -35,7 +35,7 @@ const LinkForm = reduxForm<Fields>({
       </div>
       <div>
         <Label htmlFor="url">URL</Label>
-        <FormInput name="url" component="input" type="text" />
+        <FormInput name="url" component="textarea" type="text" />
       </div>
       <Button type="submit">Save Link</Button>
     </form>
